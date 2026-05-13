@@ -1,5 +1,3 @@
-<h1>✨ 基于项目源码编译的FanchmWrt固件 ✨</h1>
-
 ## 🎉 Thanks [![](https://img.shields.io/badge/-Thanks-FFFFFF.svg)](#-Thanks-)
 - [fanchmwrt](https://github.com/fanchmwrt) ； [QiuSimons](https://github.com/QiuSimons/YAOF)
 - [fanchmwrt-packages](https://github.com/Kwonelee/fanchmwrt-packages) ； [openwrt-packages](https://github.com/Kwonelee/openwrt-packages)
