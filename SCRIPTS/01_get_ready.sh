@@ -29,7 +29,7 @@ cp -rf $GITHUB_WORKSPACE/FILES/fanchmwrt/* ./openwrt/package/fcm/luci-theme-fanc
 # fanchmwrt files
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/inittab ./openwrt/target/linux/x86/base-files/etc/inittab
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/sysupgrade.conf ./openwrt/package/base-files/files/etc/sysupgrade.conf
-cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/950-fux-nf-conn-struct-user-hook.patch ./openwrt/target/linux/generic/hack-6.12/
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/950-fwx-nf-conn-struct-user-hook.patch ./openwrt/target/linux/generic/hack-6.12/
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/target.mk ./openwrt/include/target.mk
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/fwx.meta ./openwrt/package/base-files/files/etc/
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/login.sh ./openwrt/package/base-files/files/usr/libexec/login.sh
