@@ -34,6 +34,7 @@ cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/target.mk ./openwrt/include/target.mk
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/fux.meta ./openwrt/package/base-files/files/etc/
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/login.sh ./openwrt/package/base-files/files/usr/libexec/login.sh
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/Makefile ./openwrt/package/base-files/Makefile
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/fcm ./openwrt/package/
 
 # 退出脚本
 exit 0
