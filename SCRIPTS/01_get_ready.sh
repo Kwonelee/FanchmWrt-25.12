@@ -13,11 +13,11 @@ clone_repo() {
 }
 
 # 定义一些变量，存储仓库地址和分支名
-latest_release="fanchmwrt-25.12.2"
-fanchmwrt_repo="https://github.com/fanchmwrt/fanchmwrt.git"
+latest_release="v25.12.3"
+openwrt_repo="https://github.com/openwrt/openwrt.git"
 
 # 开始克隆仓库，并行执行
-clone_repo $fanchmwrt_repo $latest_release openwrt &
+clone_repo $openwrt_repo $latest_release openwrt &
 # 等待所有后台任务完成
 wait
 
