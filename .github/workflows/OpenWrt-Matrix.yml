@@ -180,7 +180,7 @@ jobs:
 
       - name: Prepare Mixedwrt
         run: |
-          sudo chown -R runner:runner /home/runner/work/FanchmWrt-Native
+          sudo chown -R runner:runner /home/runner/work/FanchmWrt-25.12
           cp -r ./SCRIPTS/${{ matrix.script_dir }}/. ./SCRIPTS/
           cp -r ./SCRIPTS/. ./
           /bin/bash 01_get_ready.sh
@@ -211,7 +211,7 @@ jobs:
             TARGET_DEVICE_ARCH="$TARGET_DEVICE_ARCH-${{ matrix.arch_suffix }}"
           fi
           echo "TARGET_DEVICE_ARCH=$TARGET_DEVICE_ARCH" >> $GITHUB_ENV
-          latest_release="$(curl -s https://github.com/fanchmwrt/fanchmwrt/tags | grep -Eo 'v[0-9]+\.[0-9]+\.[0-9]+' | head -n 1 | sed 's/^v//')"
+          latest_release="$(curl -s https://github.com/openwrt/openwrt/tags | grep -Eo 'v[0-9]+\.[0-9]+\.[0-9]+' | head -n 1 | sed 's/^v//')"
           echo "latest_release=${latest_release}" >> $GITHUB_ENV
 
           echo "Package folder ${{ env.openwrt_source_name }}"
