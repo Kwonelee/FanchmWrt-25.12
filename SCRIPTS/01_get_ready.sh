@@ -26,5 +26,14 @@ cp -f $GITHUB_WORKSPACE/FILES/feeds.conf.default ./openwrt/feeds.conf.default
 cp -f $GITHUB_WORKSPACE/FILES/menu-fanchmwrt.js ./openwrt/package/fcm/luci-theme-fanchmwrt/htdocs/luci-static/resources/menu-fanchmwrt.js
 cp -rf $GITHUB_WORKSPACE/FILES/fanchmwrt/* ./openwrt/package/fcm/luci-theme-fanchmwrt/htdocs/luci-static/fanchmwrt/
 
+# fanchmwrt files
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/inittab ./openwrt/target/linux/x86/base-files/etc/inittab
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/sysupgrade.conf ./openwrt/package/base-files/files/etc/sysupgrade.conf
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/950-fux-nf-conn-struct-user-hook.patch ./openwrt/target/linux/generic/hack-6.12/
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/target.mk ./openwrt/include/target.mk
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/fux.meta ./openwrt/package/base-files/files/etc/
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/login.sh ./openwrt/package/base-files/files/usr/libexec/login.sh
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/Makefile ./openwrt/package/base-files/Makefile
+
 # 退出脚本
 exit 0
