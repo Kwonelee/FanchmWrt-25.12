@@ -30,7 +30,7 @@ cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/target.mk ./openwrt/include/target.mk
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/fwx.meta ./openwrt/package/base-files/files/etc/
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/login.sh ./openwrt/package/base-files/files/usr/libexec/login.sh
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/Makefile ./openwrt/package/base-files/Makefile
-cp -rf $GITHUB_WORKSPACE/FILES/fcmfiles/fcm ./openwrt/package/
+cp -a $GITHUB_WORKSPACE/FILES/fcmfiles/fcm ./openwrt/package/
 sed -i "s/hostname='OpenWrt'/hostname='FanchmWrt'/g" ./openwrt/package/base-files/files/bin/config_generate
 sed -i "s/timezone='GMT0'/timezone='HKT-8'/g" ./openwrt/package/base-files/files/bin/config_generate
 sed -i "s/zonename='UTC'/zonename='Asia\/Hong Kong'/g" ./openwrt/package/base-files/files/bin/config_generate
