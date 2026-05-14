@@ -23,6 +23,7 @@ wait
 
 # fanchmwrt处理
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/inittab ./openwrt/target/linux/x86/base-files/etc/inittab
+cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/banner ./openwrt/package/base-files/files/etc/banner
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/sysupgrade.conf ./openwrt/package/base-files/files/etc/sysupgrade.conf
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/950-fwx-nf-conn-struct-user-hook.patch ./openwrt/target/linux/generic/hack-6.12/
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/target.mk ./openwrt/include/target.mk
