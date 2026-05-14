@@ -30,9 +30,10 @@ cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/fwx.meta ./openwrt/package/base-files/fil
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/login.sh ./openwrt/package/base-files/files/usr/libexec/login.sh
 cp -f $GITHUB_WORKSPACE/FILES/fcmfiles/Makefile ./openwrt/package/base-files/Makefile
 cp -rf $GITHUB_WORKSPACE/FILES/fcmfiles/fcm ./openwrt/package/
-sed -i "s/hostname='OpenWrt'/hostname='FanchmWrt'/g" package/base-files/files/bin/config_generate
-sed -i "s/timezone='GMT0'/timezone='HKT-8'/g" package/base-files/files/bin/config_generate
-sed -i "s/zonename='UTC'/zonename='Asia\/Hong Kong'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='OpenWrt'/hostname='FanchmWrt'/g" ./openwrt/package/base-files/files/bin/config_generate
+sed -i "s/timezone='GMT0'/timezone='HKT-8'/g" ./openwrt/package/base-files/files/bin/config_generate
+sed -i "s/zonename='UTC'/zonename='Asia\/Hong Kong'/g" ./openwrt/package/base-files/files/bin/config_generate
+sed -i "s/default "OpenWrt"/default "FanchmWrt"/g" ./openwrt/package/base-files/image-config.in
 
 # 进行一些处理
 cp -f $GITHUB_WORKSPACE/FILES/feeds.conf.default ./openwrt/feeds.conf.default
